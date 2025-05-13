@@ -7,7 +7,7 @@ import 'di/injection_container.dart' as di;
 import 'presentation/bloc/movie_search/movie_search_bloc.dart';
 import 'presentation/bloc/movie_categories/movie_categories_bloc.dart';
 import 'presentation/bloc/movie_details/movie_details_bloc.dart';
-import 'presentation/pages/home_page.dart';
+import 'presentation/pages/home/home_page.dart';
 import 'core/constants/app_colors.dart';
 import 'core/constants/utils/theme_provider.dart';
 

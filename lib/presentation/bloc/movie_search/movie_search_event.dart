@@ -38,12 +38,15 @@ class MovieSearchLoaded extends MovieSearchState {
   @override
   List<Object> get props => [movies, hasReachedEnd, currentPage, currentQuery];
 }
-
 class MovieSearchError extends MovieSearchState {
   final String message;
-  
-  const MovieSearchError({required this.message});
-  
+  final bool isMinLengthError;
+
+  const MovieSearchError({
+    required this.message,
+    this.isMinLengthError = false,
+  });
+
   @override
-  List<Object> get props => [message];
+  List<Object> get props => [message, isMinLengthError];
 }

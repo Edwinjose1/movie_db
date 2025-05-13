@@ -2,3 +2,9 @@
 abstract class MovieCategoriesEvent {}
 
 class FetchAllCategoriesEvent extends MovieCategoriesEvent {}
+
+class RetryFetchCategoryEvent extends MovieCategoriesEvent {
+  final String category;
+  
+  RetryFetchCategoryEvent({required this.category});
+}

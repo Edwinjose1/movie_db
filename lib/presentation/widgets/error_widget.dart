@@ -48,7 +48,7 @@ class ErrorDisplayWidget extends StatelessWidget {
             if (onRetry != null)
               ElevatedButton(
                 onPressed: onRetry,
-                child: const Text('Retry'),
+                child: const Text('Retry',style: TextStyle(color: Colors.white),),
               ),
           ],
         ),

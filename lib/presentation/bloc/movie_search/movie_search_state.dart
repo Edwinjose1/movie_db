@@ -5,7 +5,8 @@ abstract class MovieSearchEvent extends Equatable {
   @override
   List<Object> get props => [];
 }
-
+// Add this to movie_search_event.dart
+class ResetSearchEvent extends MovieSearchEvent {}
 class SearchMoviesEvent extends MovieSearchEvent {
   final String query;
   final int page;
